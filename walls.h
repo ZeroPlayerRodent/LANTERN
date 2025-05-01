@@ -154,7 +154,9 @@ void collect_gas() {
     }
   }
   battery += 40;
-  if (battery > 60) battery = 60;
+  if (battery > 80) {
+    battery = 80;
+  }
   render_battery();
   draw_wall();
 }

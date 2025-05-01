@@ -137,7 +137,7 @@ void menu() {
   light = false;
   current_level = 0;
   bat_time = 60;
-  battery = 60;
+  battery = 80;
   reset_score();
   init_player();
   died = false;

@@ -17,7 +17,7 @@ struct player players[2];
 bool light;
 
 byte bat_time = 60;
-byte battery = 60;
+byte battery = 80;
 
 void render_battery() {
   putcharxy(0, 0, 8);
@@ -45,6 +45,16 @@ void render_battery() {
     putcharxy(5, 0, 8);
   } else {
     putcharxy(5, 0, 0);
+  }
+  if (battery > 60) {
+    putcharxy(6, 0, 8);
+  } else {
+    putcharxy(6, 0, 0);
+  }
+  if (battery > 70) {
+    putcharxy(7, 0, 8);
+  } else {
+    putcharxy(7, 0, 0);
   }
 }
 
